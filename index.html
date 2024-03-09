@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+background: url();
+background-image: none;
+align-items: center;
+justify-content: center;
+display: flex;
+font-family: 'sans-serif';
+}
+.container{
+    position: relative;
+    margin-top: 100px;
+    width: 450px;
+    height: auto;
+    background: #dedede;
+    border-radius: 5px;
+
+}
+.label{
+    padding: 20px 130px;
+    font-size: 35px;
+    font-weight: bold;
+    
+}
+.form{
+    padding: 20px 40px;
+}
+.form .font{
+    font-size: 18px;
+    color: #130f40;
+    margin: 5px 0;
+}
+.form input{
+    height: 40px;
+    widows: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+}
+.form .font2{
+    margin-top: 30px;
+}
+.form button{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    background-color: #1A237E;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid #3949ab;
+}
+.form button:hover{
+    background: #151c6a;
+}
+.form #email_error, .form #pass_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color:#c62828;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #ef9a9a;
+    display:none ;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1  class="label">User Login</h1>
+        <form class="form" method="post" name="form" onsubmit="return validated()">
+            <div class="font">Email or Phone</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error">please check your Email or Phone</div>
+            <div class="font2">Password</div>
+            <input type="password" name="password">
+            <div id="pass_error">please check your Password</div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
